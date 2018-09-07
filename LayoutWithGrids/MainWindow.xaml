@@ -7,6 +7,51 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            
+
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="Red"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+        <Rectangle Fill="Orange"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+        <Rectangle Fill="Green"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+        <Rectangle Fill="Blue"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+        <Rectangle Fill="Indigo"
+                   Grid.Row="2"></Rectangle>
+        <Rectangle Fill="Violet"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+        <Rectangle Fill="Black"
+                   Grid.Row="2"
+                  Grid.Column="1"/>
+        <Rectangle Fill="Pink"
+                   Grid.Row="3"></Rectangle>
+        <Label Content="Rectangles showing column width"
+               FontSize="24"
+               Grid.Row="5"
+               Grid.ColumnSpan="2"/>
+        <Rectangle Fill="Wheat"
+                   Grid.Row="6"></Rectangle>
+        <Rectangle Fill="Purple"
+                   Grid.Row="6"
+                   Grid.Column="1"></Rectangle>
     </Grid>
 </Window>
